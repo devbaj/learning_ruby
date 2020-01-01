@@ -3,18 +3,18 @@
 =begin
 a
 multiline
-		comment
+    comment
 =end
 
 puts "hello"
 
 END {
-	puts "this is the last block"
+  puts "this is the last block"
 }
 
 puts "Coding"
 puts "Dojo"
 
 BEGIN {
-	puts "this is the first block"
+  puts "this is the first block"
 }
