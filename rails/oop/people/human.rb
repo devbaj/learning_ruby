@@ -8,8 +8,7 @@ class Human
     @health = 100
   end
 
-  def attack target, damage
-    puts target.class.ancestors
+  def attack target, damage = 10
     if target.class.ancestors.include? Human
       puts "Target is human"
       target.health -= damage
@@ -21,8 +20,8 @@ class Human
 
 end
 
-rossiu = Human.new
-simon = Human.new
-puts "Simon: #{simon.health}, Rossiu: #{rossiu.health}"
-simon.attack(rossiu, 10)
-puts "Simon: #{simon.health}, Rossiu: #{rossiu.health}"
+# rossiu = Human.new
+# simon = Human.new
+# puts "Simon: #{simon.health}, Rossiu: #{rossiu.health}"
+# simon.attack(rossiu, 10)
+# puts "Simon: #{simon.health}, Rossiu: #{rossiu.health}"
